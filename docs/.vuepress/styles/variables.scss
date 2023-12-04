@@ -1,0 +1,180 @@
+:root{
+	// brand colors
+	--c-brand: #050505;             // 00
+	--c-brand-light: #050505;       // 00
+
+	// background colors
+	--c-bg: #E6E6E6;				 // 100
+	--c-bg-light: #F5F5F5;          // 90
+	--c-bg-lighter: #D6D6D6;        // 80
+	--c-bg-lightest: #BBBBBB;
+	--c-bg-dark: #FAFAFA;           // 110
+	--c-bg-darker: #FFFFFF;         // min
+	--c-bg-navbar: var(--c-bg);
+	--c-bg-sidebar: var(--c-bg);
+	--c-bg-arrow: #cccccc;
+
+	// text colors
+	--c-text: #606060;              // 50
+	--c-text-accent: #292929;
+	--c-text-strong: #3C3C3C;
+	--c-heading: #050505;
+	--c-text-light: #606060;        // 50
+	--c-text-lighter: #4A4A4A;      // 60
+	--c-text-lightest: #8F8F8F;     // 70
+	--c-text-quote: #4A4A4A;        // 60
+
+	// border colors
+	--c-border: #D6D6D6;            // 80
+	--c-border-dark: #BBBBBB;       // 70
+
+	// custom container colors
+	--c-tip: #42b983;
+	--c-tip-bg: var(--c-bg-light);
+	--c-tip-title: var(--c-text);
+	--c-tip-text: var(--c-text);
+	--c-tip-text-accent: var(--c-text-accent);
+	--c-warning: #ffc310;
+	--c-warning-bg: #fffae3;
+	--c-warning-bg-light: #fff3ba;
+	--c-warning-bg-lighter: #fff0b0;
+	--c-warning-border-dark: #f7dc91;
+	--c-warning-details-bg: #fff5ca;
+	--c-warning-title: #f1b300;
+	--c-warning-text: #746000;
+	--c-warning-text-accent: #edb100;
+	--c-warning-text-light: #c1971c;
+	--c-warning-text-quote: #ccab49;
+	--c-danger: #f11e37;
+	--c-danger-bg: #ffe0e0;
+	--c-danger-bg-light: #ffcfde;
+	--c-danger-bg-lighter: #ffc9c9;
+	--c-danger-border-dark: #f1abab;
+	--c-danger-details-bg: #ffd4d4;
+	--c-danger-title: #ed1e2c;
+	--c-danger-text: #660000;
+	--c-danger-text-accent: #bd1a1a;
+	--c-danger-text-light: #b5474d;
+	--c-danger-text-quote: #c15b5b;
+	--c-details-bg: #eeeeee;
+
+	// badge component colors
+	--c-badge-tip: var(--c-tip);
+	--c-badge-warning: #ecc808;
+	--c-badge-warning-text: var(--c-bg);
+	--c-badge-danger: #dc2626;
+	--c-badge-danger-text: var(--c-bg);
+
+	// transition vars
+	--t-color: 0;
+	--t-transform: 0;
+
+	// code blocks vars
+	--code-bg-color: #282c34;
+	--code-hl-bg-color: rgba(0, 0, 0, 0.66);
+	--code-ln-color: #9e9e9e;
+	--code-ln-wrapper-width: 3.5rem;
+
+	// font vars
+	--font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	--font-family-code: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+
+html.dark {
+	// brand colors
+	--c-brand: #FFFFFF;           // min
+	--c-brand-light: #FFFFFF;     // min
+
+	// background colors
+	--c-bg: #181818;              // 10
+	--c-bg-light: #101010;        // 20
+	--c-bg-lighter: #292929;      // 30
+	--c-bg-lightest: #3C3C3C;
+	--c-bg-dark: #050505;         // 00
+	--c-bg-darker: #000000;       // max
+
+	// text colors
+	--c-text: #8F8F8F;            // 70
+	--c-text-accent: #E6E6E6;
+	--c-text-strong: #D6D6D6;
+	--c-heading: #FAFAFA;
+	--c-text-light: #8F8F8F;      // 60
+	--c-text-lighter: #BBBBBB;    // 50
+	--c-text-lightest: #606060;   // 50
+	--c-text-quote: #BBBBBB;
+
+	.vuepress-summary-item-header {
+	  color: --c-bg;
+	}
+	
+
+	// border colors
+	--c-border: #3C3C3C;          // 30
+	--c-border-dark: #4A4A4A;     // 40
+
+	// custom container colors
+	--c-tip: #318a62;
+	--c-warning: #e0ad15;
+	--c-warning-bg: #2d2f2d;
+	--c-warning-bg-light: #423e2a;
+	--c-warning-bg-lighter: #44442f;
+	--c-warning-border-dark: #957c35;
+	--c-warning-details-bg: #39392d;
+	--c-warning-title: #fdca31;
+	--c-warning-text: #d8d96d;
+	--c-warning-text-accent: #ffbf00;
+	--c-warning-text-light: #ddb84b;
+	--c-warning-text-quote: #ccab49;
+	--c-danger: #fc1e38;
+	--c-danger-bg: #39232c;
+	--c-danger-bg-light: #4b2b35;
+	--c-danger-bg-lighter: #553040;
+	--c-danger-border-dark: #a25151;
+	--c-danger-details-bg: #482936;
+	--c-danger-title: #fc2d3b;
+	--c-danger-text: #ea9ca0;
+	--c-danger-text-accent: #fd3636;
+	--c-danger-text-light: #d9777c;
+	--c-danger-text-quote: #d56b6b;
+	--c-details-bg: #323843;
+
+	// badge component colors
+	--c-badge-warning: var(--c-warning);
+	--c-badge-warning-text: #3c2e05;
+	--c-badge-danger: var(--c-danger);
+	--c-badge-danger-text: #401416;
+
+	// code blocks vars
+	--code-hl-bg-color: #363b46;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root > *{
+	font-family: 'Inter', sans-serif;
+}
+
+
+
+
+
+
+// import font
+@font-face {
+	font-family: 'Inter';
+	src: url(https://fonts.gstatic.com/s/spacegrotesk/v15/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2) format('woff2');
+}
+
+// global font
+// :root > *{
+// 	font-family: 'Space Grotesk', sans-serif !important;
+// }
+
+// @font-face {
+// 	font-family: 'Space Grotesk' !important;
+// 	font-weight: 400;
+// 	src: url(SpaceGrotesk-Regular.w{.red}off2) !important;
+// }

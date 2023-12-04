@@ -1,0 +1,30 @@
+@import 'variables';
+
+// markdown table styling
+th, tr, td{
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	background-color: transparent !important;
+}
+
+thead > tr > th{
+	border-bottom: 1px solid var(--c-heading) !important;
+}
+
+th{
+	padding: .6em 1em;
+	text-align: left;
+}
+
+td{
+	padding: .4em 1em;
+}
+
+tr:hover{
+	background-color: var(--c-bg-light) !important;
+}
+
+table{
+	margin: 36px 0;
+}

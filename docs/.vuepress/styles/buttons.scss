@@ -1,0 +1,105 @@
+@import 'variables';
+
+// ToC hover button-style
+p > a:hover, ol > li > a:hover{
+	text-decoration: none !important;
+
+	background-color: var(--c-bg-lighter);
+	border: 8px solid var(--c-bg-lighter);
+}
+
+// btn container
+.actions{
+	justify-content: space-between !important;
+	gap: 12px !important;
+	max-width: 540px !important;
+}
+
+// btns
+.action-button{
+	color: var(--c-text-accent) !important;
+	border-radius: 0px !important;
+	border-width: 0 !important;
+	background-color: var(--c-bg-lighter) !important;
+	padding: 12px 24px !important;
+}
+
+.action-button.secondary{
+	width: calc(50% - 6px) !important;
+}
+
+.action-button.primary{
+	color: var(--c-bg-light) !important;
+	width: 100% !important;
+	background-color: var(--c-text) !important;
+}
+.action-button.primary:hover{
+	background-color: var(--c-text-strong) !important;
+}
+
+.action-button:hover{
+	background-color: var(--c-bg-lightest) !important;
+}
+
+// search bar
+.search-pro-button{
+	border-radius: 0 !important;
+}
+.search-pro-button:hover{
+	background-color: var(--c-bg-light) !important;
+	border-color: var(--c-border-dark) !important;
+}
+
+// bottom navigation
+p.inner{
+	overflow: visible !important;
+	padding-top: 32px !important;
+	display: grid !important;
+	gap: 12px;
+	grid-template-columns: 1fr 1fr;
+}
+
+.next{
+	grid-column: 2 !important;
+}
+
+
+.prev{
+	grid-column: 1 !important;
+}
+
+.next a, .prev a{
+	text-align: center !important;
+	padding: 19px 18px !important;
+	border-radius: 0px !important;
+	border-width: 0 !important;
+	background-color: var(--c-bg-lighter) !important;
+	display: block !important;
+	margin: auto !important;
+}
+
+.next a:hover, .prev a:hover{
+	background-color: var(--c-bg-lightest) !important;
+}
+
+// arrow icons
+.page-nav .prev a:before{
+	content: url(../arrow_l_b.svg);
+	transform: scale(1, -1) !important;
+}
+
+.page-nav .next a:after{
+	content: url(../arrow_r_b.svg);
+}
+
+html.dark .page-nav .next a:after{
+	content: url(../arrow_r_w.svg);
+}
+html.dark .page-nav .prev a:before{
+	content: url(../arrow_l_w.svg);
+}
+
+
+
+
+

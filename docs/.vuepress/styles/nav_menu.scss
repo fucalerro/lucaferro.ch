@@ -1,0 +1,41 @@
+@import 'variables';
+
+// navbar elements
+
+// nav menu color
+.navbar-item > a{
+	color: var(--c-text-lighter) !important;
+}
+
+
+
+div.navbar-item{
+	margin: 0 !important;
+}
+
+nav > div > a{
+	color: var(--c-bg-lightest) !important;
+	padding: 0 12px;
+}
+
+nav > div:hover{
+	>a{
+		color: var(--c-heading) !important;
+	}
+	background-color: var(--c-bg-lighter);
+}
+
+a.router-link-active{
+	border-bottom: 0 !important;
+	color: var(--c-heading) !important;
+}
+
+
+// remove border on hover and active
+.router-link-active:hover, nav > div > a:hover{
+	border-bottom: 0 !important;
+}
+
+.router-link-active{
+	color: var(--c-heading) !important;
+}

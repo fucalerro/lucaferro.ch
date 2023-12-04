@@ -1,0 +1,15 @@
+@import 'variables';
+
+// remove transition on hover
+.sidebar-item.sidebar-heading{
+    transition: all 0s !important;
+    font-weight: 500 !important;
+}
+
+
+.sidebar-item-children > li > a{
+    &:hover{
+        color: var(--c-text-accent) !important;
+    }
+    color: var(--c-text) !important;
+}
