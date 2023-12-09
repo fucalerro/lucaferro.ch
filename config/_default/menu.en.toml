@@ -1,0 +1,33 @@
+# config/_default/menus.en.toml
+
+[[main]]
+  name = "Work"
+  pageRef = "work"
+  weight = 10
+
+[[main]]
+  name = "Blog"
+  pageRef = "blog"
+  weight = 20
+
+[[main]]
+  name = "About"
+  pageRef = "about"
+  weight = 30
+
+[[main]]
+  name = "Github"
+  url = "https://github.com/fucalerro"
+  weight = 40
+
+[[main]]
+  name = "Onchain"
+  url = "https://debank.com/profile/0x3e184af75c982e16eeaf97c9a66cc607d8966f2d/history"
+  weight = 30
+
+[[main]]
+  identifier = "search"
+  weight = 90
+  [main.params]
+    action = "search"
+    icon = "search"

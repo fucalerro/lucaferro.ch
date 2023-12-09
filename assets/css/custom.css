@@ -1,0 +1,83 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); */
+
+
+html body {
+	font-family: 'Inter', sans-serif;
+	background-color: #F5F5F5 !important;
+	font-weight: 400 ;
+}
+
+h1 {
+	font-weight: 600 !important;
+}
+
+h2 {
+	font-weight: 500 !important;
+}
+
+nav > ul > li > a {
+	font-weight: 400;
+	color: 686868 !important;
+	font-size: 20px !important;
+	text-decoration: none !important;
+	padding: 8px 14px;
+
+}
+
+nav > ul > li{
+	margin: 0 2px !important;
+}
+
+nav > ul > li > a > span,
+a, span
+ {
+	color: #686868 !important;
+	transition-duration: 0ms !important;
+}
+
+
+body a, body button {
+	color: #686868 !important;
+	transition-duration: 0 !important;
+}
+
+nav > ul > li > a:visited{
+	color: #202020 !important;
+}
+
+
+nav > ul > li > a:hover,
+nav > ul > li > a:hover > span {
+	background-color: #fff !important;
+	text-decoration: none !important;
+	border-radius: 8px;
+}
+
+
+
+nav > ul > li > a:hover {
+	padding: 10;
+}
+
+article {
+	padding: 12px !important;
+	border-radius: 12px !important;
+}
+
+article:hover{
+	background-color: #fff !important;
+}
+
+article  a {
+	color: #202020 !important;
+	font-weight: 500 !important;
+}
+
+article a:hover {
+	color: #202020 !important;
+	text-decoration: none !important;
+}
+
+article div {
+	color: #686868 !important;
+}

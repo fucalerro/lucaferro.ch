@@ -1,0 +1,4 @@
+baseURL = 'https://lucaferro.ch/'
+languageCode = 'en-us'
+title = 'Luca Ferro'
+theme = 'congo'

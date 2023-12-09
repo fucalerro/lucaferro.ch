@@ -1,0 +1,9 @@
+colorScheme = "fire"
+defaultAppearance = "light"
+autoSwitchAppearance = false
+footer.showCopyright = false
+footer.showThemeAttribution = false
+header.logo = "logo.png"
+header.showTitle = false
+homepage.layout = "page"
+list.showSummary = true
