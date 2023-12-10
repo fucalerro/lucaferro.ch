@@ -59,25 +59,33 @@ nav > ul > li > a:hover {
 	padding: 10;
 }
 
-article {
-	padding: 12px !important;
+section > article {
+	padding: 8px !important;
 	border-radius: 12px !important;
+	cursor: pointer;
 }
 
-article:hover{
+section > article:hover{
 	background-color: #fff !important;
 }
 
-article  a {
+section > article a {
 	color: #202020 !important;
 	font-weight: 500 !important;
+	display: block;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	pointer-events: all;
 }
 
-article a:hover {
+section > article a:hover {
 	color: #202020 !important;
 	text-decoration: none !important;
 }
 
-article div {
+section > article div {
 	color: #686868 !important;
 }

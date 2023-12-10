@@ -7,3 +7,5 @@ header.logo = "logo.png"
 header.showTitle = false
 homepage.layout = "page"
 list.showSummary = true
+list.groupByYear = false
+
