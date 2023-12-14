@@ -1,0 +1,419 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="false"
+><head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="rgb(255,255,255)" />
+  
+  <title>Even better swap rates with DEX Meta aggregators &middot; Luca Ferro</title>
+    <meta name="title" content="Even better swap rates with DEX Meta aggregators &middot; Luca Ferro" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.022d0ebc3b46a335eb1c7ef79b7f2de143d7cd5156d433638592ef1ce5f8554e.js"
+    integrity="sha256-Ai0OvDtGozXrHH73m38t4UPXzVFW1DNjhZLvHOX4VU4="
+  ></script>
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.daab180406332145f56232bdeda048f8ecb5dd714db7fbe932b189ccc886c680.css"
+    integrity="sha256-2qsYBAYzIUX1YjK97aBI&#43;Oy13XFNt/vpMrGJzMiGxoA="
+  />
+  
+  
+  
+  
+  
+  <meta
+    name="description"
+    content="
+      
+        DEX aggregators are good. Aggregators of DEX aggregators are even better.
+      
+    "
+  />
+  
+  
+  
+  <link rel="canonical" href="https://lucaferro.ch/blog/dex_aggregators/" />
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Even better swap rates with DEX Meta aggregators" />
+<meta property="og:description" content="DEX aggregators are good. Aggregators of DEX aggregators are even better." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lucaferro.ch/blog/dex_aggregators/" /><meta property="og:image" content="https://lucaferro.ch/blog/dex_aggregators/cover.jpeg" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-03-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-03-25T00:00:00+00:00" />
+
+
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://lucaferro.ch/blog/dex_aggregators/cover.jpeg" /><meta name="twitter:title" content="Even better swap rates with DEX Meta aggregators"/>
+<meta name="twitter:description" content="DEX aggregators are good. Aggregators of DEX aggregators are even better."/>
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "blog",
+    "name": "Even better swap rates with DEX Meta aggregators",
+    "headline": "Even better swap rates with DEX Meta aggregators",
+    
+    "abstract": "DEX aggregators are good. Aggregators of DEX aggregators are even better.",
+    "inLanguage": "en",
+    "url" : "https:\/\/lucaferro.ch\/blog\/dex_aggregators\/",
+    "author" : {
+      "@type": "Person",
+      "name": ""
+    },
+    "copyrightYear": "2023",
+    "dateCreated": "2023-03-25T00:00:00\u002b00:00",
+    "datePublished": "2023-03-25T00:00:00\u002b00:00",
+    
+    "dateModified": "2023-03-25T00:00:00\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "287"
+  }
+  </script>
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+  
+  
+</head>
+<body
+    class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="font-bold pe-2 text-primary-600 dark:text-primary-400">&darr;</span
+        >Skip to main content</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral print:hidden sm:py-10">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="flex flex-row items-center">
+      
+    <a href="/" class="mr-2">
+      <img
+        src="/logo.png"
+        width="264"
+        height="54"
+        class="max-h-[10rem] max-w-[10rem] object-scale-down object-left"
+        alt="Luca Ferro"
+      />
+    </a>
+
+    </div>
+    
+    
+      <ul class="flex flex-col list-none text-end sm:flex-row">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/work/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Work</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/blog/"
+                  title="blog"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Blog</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="https://debank.com/profile/0x3e184af75c982e16eeaf97c9a66cc607d8966f2d/history"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Onchain</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                
+                
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="https://github.com/fucalerro"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Github</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="https://www.linkedin.com/in/luca-ferro/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Linkedin</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+          
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        Even better swap rates with DEX Meta aggregators
+      </h1>
+      <div class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2023-03-25 00:00:00 &#43;0000 UTC">25 March 2023</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+
+
+      </div>
+      
+        <div class="prose">
+          <img
+            class="mb-6 -mt-4 rounded-md"
+            
+              width="1200"
+              height="800"
+              
+                srcset="/blog/dex_aggregators/cover_huaae3d8ed55f94f6aaf16761a639767e2_39270_330x0_resize_q75_box.jpeg 330w,/blog/dex_aggregators/cover_huaae3d8ed55f94f6aaf16761a639767e2_39270_660x0_resize_q75_box.jpeg 660w,/blog/dex_aggregators/cover_huaae3d8ed55f94f6aaf16761a639767e2_39270_1024x0_resize_q75_box.jpeg 1024w,/blog/dex_aggregators/cover_huaae3d8ed55f94f6aaf16761a639767e2_39270_1320x0_resize_q75_box.jpeg 2x"
+              
+            
+            alt=""
+          />
+          
+        </div>
+      
+    </header>
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      <div class="min-w-0 min-h-0 max-w-prose grow">
+        <h1 id="embracing-the-future-of-decentralized-exchanges-with-dex-aggregators" class="relative group">Embracing the Future of Decentralized Exchanges with DEX Aggregators <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#embracing-the-future-of-decentralized-exchanges-with-dex-aggregators" aria-label="Anchor">#</a></span></h1><h2 id="introduction-to-dex-aggregators" class="relative group">Introduction to DEX Aggregators <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#introduction-to-dex-aggregators" aria-label="Anchor">#</a></span></h2><p>Have you ever wondered if it&rsquo;s possible to simultaneously connect to all decentralized exchanges (DEXs), compare prices across them, and choose the one offering the best deal? Well, now it&rsquo;s not just a possibility – it&rsquo;s a reality, thanks to DEX aggregators!</p>
+<h2 id="using-a-dex-aggregator-dexag" class="relative group">Using a DEX Aggregator (DEXag) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#using-a-dex-aggregator-dexag" aria-label="Anchor">#</a></span></h2><p>DEX aggregators like @paraswap, @1inch, and @matchaxyz are changing the game by providing the best available prices across all DEXs on a chain. This innovation in the cryptocurrency world is not only convenient but also cost-effective.</p>
+<p>A DEX aggregator typically goes a step further by splitting transactions across multiple DEXs and pools. This approach optimizes each pool&rsquo;s liquidity and results in more advantageous transactions than if they were executed on a single DEX or pool.</p>
+<h2 id="real-world-examples" class="relative group">Real-world Examples <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#real-world-examples" aria-label="Anchor">#</a></span></h2><p>For instance, to swap 10k ARB for DAI, Paraswap first swaps to USDC on @traderjoe_xyz, then to DAI on UniswapV3. However, for a larger amount like 100k ARB, it&rsquo;s more beneficial to split the trade across several routes to avoid unbalancing a single pool and experiencing slippage.</p>
+<p>So, how does one choose the right DEX aggregator? Thanks to @DefiLlama, you don&rsquo;t have to worry anymore! DeFiLlama Swap is a meta-aggregator that connects to all DEX aggregators to offer you the best of the best prices.</p>
+<p>For 10k ARB, the best price seems to be on @KyberNetwork, whereas for 100k ARB, Firebird offers a more favorable rate. In this scenario, DeFiLlama Swap outperforms Paraswap in terms of pricing.</p>
+<p>If you&rsquo;re not yet familiar with @DefiLlama&rsquo;s new tool, I highly recommend using it for all your swaps. It&rsquo;s set to save you even more than standard DEX aggregators.</p>
+<p>Tool Link: 
+  
+  
+    
+<a href="defillama.com/swap">DeFiLlama Swap</a></p>
+
+      </div>
+    </section>
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  <div class="flex">
+    
+    <div class="place-self-center">
+      
+      
+      <div class="text-2xl sm:text-lg">
+</div>
+    </div>
+  </div>
+
+
+      
+
+      
+  
+
+
+      
+    </footer>
+  </article>
+
+        
+          <div class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12">
+            <a
+              href="#the-top"
+              class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+              aria-label="Scroll to top"
+              title="Scroll to top"
+            >
+              &uarr;
+            </a>
+          </div>
+        
+      </main><footer class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+      
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+    </div>
+  </div>
+  
+  
+</footer>
+
+    </div>
+  </body>
+</html>

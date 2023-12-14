@@ -1,6 +1,8 @@
 ---
-title: Embracing the Future of Decentralized Exchanges with DEX Aggregators
+title: Even better swap rates with DEX Meta aggregators
 date: 2023-03-25
+summary: DEX aggregators are good. Aggregators of DEX aggregators are even better.
+cover: "cover.jpeg"
 ---
 
 # Embracing the Future of Decentralized Exchanges with DEX Aggregators

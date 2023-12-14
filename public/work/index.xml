@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Luca Ferro</title>
+    <link>https://lucaferro.ch/work/</link>
+    <description>Recent content on Luca Ferro</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 07 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lucaferro.ch/work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Disrupting data analytics tools with a webapp</title>
+      <link>https://lucaferro.ch/work/mipasa/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://lucaferro.ch/work/mipasa/</guid>
+      <description>Crafting cutting-edge features for a next gen data analytics plateform</description>
+    </item>
+    <item>
+      <title>Designing a management DApp for Swapbox operators from A to Z</title>
+      <link>https://lucaferro.ch/work/swapbox_admin_dapp/</link>
+      <pubDate>Sat, 25 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://lucaferro.ch/work/swapbox_admin_dapp/</guid>
+      <description>Designing a complex dApp with web3 constrains used by Swapbox operators to manage their Swapbox fleet.</description>
+    </item>
+    <item>
+      <title>Designing the user interface for Swapbox</title>
+      <link>https://lucaferro.ch/work/swapbox_gui/</link>
+      <pubDate>Sat, 25 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://lucaferro.ch/work/swapbox_gui/</guid>
+      <description>Setting a new standard for the user experience and interface of crypto ATMs, focusing on emerging economies.</description>
+    </item>
+    <item>
+      <title>Enabling purchases of Bitcoin notes physically</title>
+      <link>https://lucaferro.ch/work/noteworthy_gui/</link>
+      <pubDate>Sat, 25 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://lucaferro.ch/work/noteworthy_gui/</guid>
+      <description>Bitcoin notes are a novel and secure way to hold Bitcoin. Why not make the experience even better by acquiring them in person?</description>
+    </item>
+  </channel>
+</rss>

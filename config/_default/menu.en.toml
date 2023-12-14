@@ -11,14 +11,12 @@
   weight = 20
 
 [[main]]
-  name = "About"
-  pageRef = "about"
-  weight = 30
-
-[[main]]
   name = "Github"
   url = "https://github.com/fucalerro"
-  weight = 40
+
+[[main]]
+  name = "Linkedin"
+  url = "https://www.linkedin.com/in/luca-ferro/"
 
 [[main]]
   name = "Onchain"

@@ -1,0 +1,643 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="false"
+><head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="rgb(255,255,255)" />
+  
+  <title>Designing a management DApp for Swapbox operators from A to Z &middot; Luca Ferro</title>
+    <meta name="title" content="Designing a management DApp for Swapbox operators from A to Z &middot; Luca Ferro" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.022d0ebc3b46a335eb1c7ef79b7f2de143d7cd5156d433638592ef1ce5f8554e.js"
+    integrity="sha256-Ai0OvDtGozXrHH73m38t4UPXzVFW1DNjhZLvHOX4VU4="
+  ></script>
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.daab180406332145f56232bdeda048f8ecb5dd714db7fbe932b189ccc886c680.css"
+    integrity="sha256-2qsYBAYzIUX1YjK97aBI&#43;Oy13XFNt/vpMrGJzMiGxoA="
+  />
+  
+  
+  
+  
+  
+  <meta
+    name="description"
+    content="
+      Swapbox needed a user friendly interface for the machine.
+    "
+  />
+  
+  
+  
+  <link rel="canonical" href="https://lucaferro.ch/work/swapbox_admin_dapp/" />
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Designing a management DApp for Swapbox operators from A to Z" />
+<meta property="og:description" content="Swapbox needed a user friendly interface for the machine." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lucaferro.ch/work/swapbox_admin_dapp/" /><meta property="og:image" content="https://lucaferro.ch/work/swapbox_admin_dapp/thumbnail.svg" /><meta property="article:section" content="work" />
+<meta property="article:published_time" content="2023-11-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-11-25T00:00:00+00:00" />
+
+
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://lucaferro.ch/work/swapbox_admin_dapp/thumbnail.svg" /><meta name="twitter:title" content="Designing a management DApp for Swapbox operators from A to Z"/>
+<meta name="twitter:description" content="Swapbox needed a user friendly interface for the machine."/>
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "",
+    "name": "Designing a management DApp for Swapbox operators from A to Z",
+    "headline": "Designing a management DApp for Swapbox operators from A to Z",
+    "description": "Swapbox needed a user friendly interface for the machine.",
+    "abstract": "Designing a complex dApp with web3 constrains used by Swapbox operators to manage their Swapbox fleet.",
+    "inLanguage": "en",
+    "url" : "https:\/\/lucaferro.ch\/work\/swapbox_admin_dapp\/",
+    "author" : {
+      "@type": "Person",
+      "name": ""
+    },
+    "copyrightYear": "2023",
+    "dateCreated": "2023-11-25T00:00:00\u002b00:00",
+    "datePublished": "2023-11-25T00:00:00\u002b00:00",
+    
+    "dateModified": "2023-11-25T00:00:00\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "148"
+  }
+  </script>
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+  
+  
+</head>
+<body
+    class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="font-bold pe-2 text-primary-600 dark:text-primary-400">&darr;</span
+        >Skip to main content</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral print:hidden sm:py-10">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="flex flex-row items-center">
+      
+    <a href="/" class="mr-2">
+      <img
+        src="/logo.png"
+        width="264"
+        height="54"
+        class="max-h-[10rem] max-w-[10rem] object-scale-down object-left"
+        alt="Luca Ferro"
+      />
+    </a>
+
+    </div>
+    
+    
+      <ul class="flex flex-col list-none text-end sm:flex-row">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/work/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Work</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/blog/"
+                  title="blog"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Blog</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="https://debank.com/profile/0x3e184af75c982e16eeaf97c9a66cc607d8966f2d/history"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Onchain</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                
+                
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="https://github.com/fucalerro"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Github</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="https://www.linkedin.com/in/luca-ferro/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Linkedin</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+          
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        Designing a management DApp for Swapbox operators from A to Z
+      </h1>
+      <div class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+
+    
+    
+  </div>
+
+  
+  
+
+
+      </div>
+      
+    </header>
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      <div class="min-w-0 min-h-0 max-w-prose grow">
+        <h2 id="admin-decentralized-dapp-the-core-value-of-swapbox" class="relative group">Admin decentralized dApp: the core value of Swapbox <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#admin-decentralized-dapp-the-core-value-of-swapbox" aria-label="Anchor">#</a></span></h2><p>The admin dApp is used by Swapbox operators to control their fleet. It is an essential component of Swapbox; used to deploy a Swapbox smart contract, choose a stablecoin used as liquidity, configure the fee rates, link and unlink machines, set transaction limits, explore detailed analytics, etc.</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      <img
+        class="mx-auto my-0 rounded-md"
+        
+          width="1431"
+          height="885"
+          
+            srcset="/work/swapbox_admin_dapp/4_hu6b4d6cccf7270524bd1357af40c1f942_146032_330x0_resize_box_3.png 330w,/work/swapbox_admin_dapp/4_hu6b4d6cccf7270524bd1357af40c1f942_146032_660x0_resize_box_3.png 660w,/work/swapbox_admin_dapp/4_hu6b4d6cccf7270524bd1357af40c1f942_146032_1024x0_resize_box_3.png 1024w,/work/swapbox_admin_dapp/4_hu6b4d6cccf7270524bd1357af40c1f942_146032_1320x0_resize_box_3.png 2x"
+            src="/work/swapbox_admin_dapp/4_hu6b4d6cccf7270524bd1357af40c1f942_146032_660x0_resize_box_3.png"
+          
+        
+        alt="icons"
+        
+          loading="lazy"
+        
+      />
+      
+    </figure>
+  
+</p>
+<p>Swapbox dApp is a complex system composed of 3 main components:</p>
+<h4 id="1-contract-deploylement" class="relative group">1. Contract deploylement <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1-contract-deploylement" aria-label="Anchor">#</a></span></h4><p>Deploy and configure a Swapbox contract. The configuration is structured in 3 parts:</p>
+<ol>
+<li>AMM selection</li>
+<li>Stablecoin selection</li>
+<li>Contract information (name)</li>
+</ol>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      <img
+        class="mx-auto my-0 rounded-md"
+        
+          width="1431"
+          height="885"
+          
+            srcset="/work/swapbox_admin_dapp/stable_hu9841ed630146ee85c012c049ccd385cb_31049_330x0_resize_box_3.png 330w,/work/swapbox_admin_dapp/stable_hu9841ed630146ee85c012c049ccd385cb_31049_660x0_resize_box_3.png 660w,/work/swapbox_admin_dapp/stable_hu9841ed630146ee85c012c049ccd385cb_31049_1024x0_resize_box_3.png 1024w,/work/swapbox_admin_dapp/stable_hu9841ed630146ee85c012c049ccd385cb_31049_1320x0_resize_box_3.png 2x"
+            src="/work/swapbox_admin_dapp/stable_hu9841ed630146ee85c012c049ccd385cb_31049_660x0_resize_box_3.png"
+          
+        
+        alt="icons"
+        
+          loading="lazy"
+        
+      />
+      
+    </figure>
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      <img
+        class="mx-auto my-0 rounded-md"
+        
+          width="1431"
+          height="885"
+          
+            srcset="/work/swapbox_admin_dapp/11_hu188e50ea5d83eb5a6904d8eff0ceb5dd_153994_330x0_resize_box_3.png 330w,/work/swapbox_admin_dapp/11_hu188e50ea5d83eb5a6904d8eff0ceb5dd_153994_660x0_resize_box_3.png 660w,/work/swapbox_admin_dapp/11_hu188e50ea5d83eb5a6904d8eff0ceb5dd_153994_1024x0_resize_box_3.png 1024w,/work/swapbox_admin_dapp/11_hu188e50ea5d83eb5a6904d8eff0ceb5dd_153994_1320x0_resize_box_3.png 2x"
+            src="/work/swapbox_admin_dapp/11_hu188e50ea5d83eb5a6904d8eff0ceb5dd_153994_660x0_resize_box_3.png"
+          
+        
+        alt="icons"
+        
+          loading="lazy"
+        
+      />
+      
+    </figure>
+  
+</p>
+<h4 id="2-contract-and-machines-management" class="relative group">2. Contract and machines management <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#2-contract-and-machines-management" aria-label="Anchor">#</a></span></h4><p>Management of contract wide settings, such as stablecoin liquidity, liquidity withdrawals and deposits, fee collecting, linked machines management and whitelisted tokens.</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      <img
+        class="mx-auto my-0 rounded-md"
+        
+          width="1431"
+          height="885"
+          
+            srcset="/work/swapbox_admin_dapp/9_hu6470246a7006a2dcb9ce2d5cb3963bfe_49288_330x0_resize_box_3.png 330w,/work/swapbox_admin_dapp/9_hu6470246a7006a2dcb9ce2d5cb3963bfe_49288_660x0_resize_box_3.png 660w,/work/swapbox_admin_dapp/9_hu6470246a7006a2dcb9ce2d5cb3963bfe_49288_1024x0_resize_box_3.png 1024w,/work/swapbox_admin_dapp/9_hu6470246a7006a2dcb9ce2d5cb3963bfe_49288_1320x0_resize_box_3.png 2x"
+            src="/work/swapbox_admin_dapp/9_hu6470246a7006a2dcb9ce2d5cb3963bfe_49288_660x0_resize_box_3.png"
+          
+        
+        alt="icons"
+        
+          loading="lazy"
+        
+      />
+      
+    </figure>
+  
+</p>
+<p>Management of machine wide settings, such as fee rates and transactions limits</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      <img
+        class="mx-auto my-0 rounded-md"
+        
+          width="1431"
+          height="885"
+          
+            srcset="/work/swapbox_admin_dapp/limits_hud37356aa6c7edb9252a3958336572091_117253_330x0_resize_box_3.png 330w,/work/swapbox_admin_dapp/limits_hud37356aa6c7edb9252a3958336572091_117253_660x0_resize_box_3.png 660w,/work/swapbox_admin_dapp/limits_hud37356aa6c7edb9252a3958336572091_117253_1024x0_resize_box_3.png 1024w,/work/swapbox_admin_dapp/limits_hud37356aa6c7edb9252a3958336572091_117253_1320x0_resize_box_3.png 2x"
+            src="/work/swapbox_admin_dapp/limits_hud37356aa6c7edb9252a3958336572091_117253_660x0_resize_box_3.png"
+          
+        
+        alt="icons"
+        
+          loading="lazy"
+        
+      />
+      
+    </figure>
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      <img
+        class="mx-auto my-0 rounded-md"
+        
+          width="1431"
+          height="885"
+          
+            srcset="/work/swapbox_admin_dapp/10_huab09b43318b9721cf76c8a987f4de63a_68580_330x0_resize_box_3.png 330w,/work/swapbox_admin_dapp/10_huab09b43318b9721cf76c8a987f4de63a_68580_660x0_resize_box_3.png 660w,/work/swapbox_admin_dapp/10_huab09b43318b9721cf76c8a987f4de63a_68580_1024x0_resize_box_3.png 1024w,/work/swapbox_admin_dapp/10_huab09b43318b9721cf76c8a987f4de63a_68580_1320x0_resize_box_3.png 2x"
+            src="/work/swapbox_admin_dapp/10_huab09b43318b9721cf76c8a987f4de63a_68580_660x0_resize_box_3.png"
+          
+        
+        alt="icons"
+        
+          loading="lazy"
+        
+      />
+      
+    </figure>
+  
+</p>
+<h4 id="3-analytics" class="relative group">3. Analytics <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#3-analytics" aria-label="Anchor">#</a></span></h4><p>Transaction explorer, contract information, and custom charts to display the most relevent information of a contract and its machines.</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      <img
+        class="mx-auto my-0 rounded-md"
+        
+          width="1431"
+          height="885"
+          
+            srcset="/work/swapbox_admin_dapp/8_huad28d0b6a38f076a11fd464a2a96b169_126722_330x0_resize_box_3.png 330w,/work/swapbox_admin_dapp/8_huad28d0b6a38f076a11fd464a2a96b169_126722_660x0_resize_box_3.png 660w,/work/swapbox_admin_dapp/8_huad28d0b6a38f076a11fd464a2a96b169_126722_1024x0_resize_box_3.png 1024w,/work/swapbox_admin_dapp/8_huad28d0b6a38f076a11fd464a2a96b169_126722_1320x0_resize_box_3.png 2x"
+            src="/work/swapbox_admin_dapp/8_huad28d0b6a38f076a11fd464a2a96b169_126722_660x0_resize_box_3.png"
+          
+        
+        alt="icons"
+        
+          loading="lazy"
+        
+      />
+      
+    </figure>
+  
+</p>
+
+      </div>
+    </section>
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  <div class="flex">
+    
+    <div class="place-self-center">
+      
+      
+      <div class="text-2xl sm:text-lg">
+</div>
+    </div>
+  </div>
+
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="/work/swapbox_gui/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Designing the user interface for Swapbox</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="group flex text-right" href="/work/mipasa/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Disrupting data analytics tools with a webapp</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                </span>
+              </span>
+              <span
+                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&rarr;</span
+                ><span class="ltr:hidden rtl:inline">&larr;</span></span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+        
+      </main><footer class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+      
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+    </div>
+  </div>
+  
+  
+</footer>
+
+    </div>
+  </body>
+</html>

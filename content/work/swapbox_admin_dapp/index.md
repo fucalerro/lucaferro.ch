@@ -40,3 +40,4 @@ Management of machine wide settings, such as fee rates and transactions limits
 Transaction explorer, contract information, and custom charts to display the most relevent information of a contract and its machines.
 
 ![icons](8.png)
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on Luca Ferro</title>
+    <link>https://lucaferro.ch/blog/</link>
+    <description>Recent content in blog on Luca Ferro</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 25 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lucaferro.ch/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Even better swap rates with DEX Meta aggregators</title>
+      <link>https://lucaferro.ch/blog/dex_aggregators/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://lucaferro.ch/blog/dex_aggregators/</guid>
+      <description>DEX aggregators are good. Aggregators of DEX aggregators are even better.</description>
+    </item>
+  </channel>
+</rss>

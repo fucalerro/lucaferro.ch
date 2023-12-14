@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<div class="spacer-72"></div>
+<h1 class="text-64 weight-500">I craft user-centric digital product, designed from the ground up to perform at scale.</h1>
+
+<div class="spacer-48"></div>
+
+
+
+		<div class="space"></div>
+	  
+	<section class="wake_up">
+		<div class="text-18 c-80 padding_b-12 border_b weight-400 margin_b-20">Every, day, I wake up early because I want to</div>
+		<div class="text-32 border_b c-100 padding_b-20 margin_b-20">Create friendly products for the many</div>
+		<div class="text-32 border_b c-100 padding_b-20 margin_b-20">Streamline complex processes into friendly interfaces</div>
+		<div class="text-32 border_b c-100 padding_b-20 margin_b-20">Contribue to the ongoing DeFi inclusion</div>
+	</section>
+	<div class="space"></div>
+	
+	
+	
+	
+	<div class="icon_section">
+		<div class="icon_block">
+			<img src="ur_icon.svg" alt="">
+			<div>
+				<h3 class="">User research</h3>
+				<div class="">Generating user stories, iterviewing users, analyzing competitors and accessibility all help me understand user needs.</div>
+			</div>
+		</div>
+		<div class="icon_block">
+			<img src="ur_icon.svg" alt="">
+			<div>
+				<h3 class="">User experiences</h3>
+				<div class="">Generate user flows, building information architecture, create wireframes and write UX copy in order to simplify complex processes.</div>
+			</div>
+		</div>
+		<div class="icon_block">
+			<img src="ur_icon.svg" alt="">
+		<div>
+			<h3 class="">Interface design</h3>
+			<div class="">Take ownership of design systems, create interaction and animations, prototype products to help developers to build harmonious interfaces.</div>
+		</div>
+		</div>
+	</div>
+	
+	<div class="spacer-72"></div>
+
+	<h2 class="text-48">Rooted locally.<br>Thinking globally.</h2>
+	<div class="spacer-48"></div>
+	<div class="col-2">
+		<div class="c-80">Like the business I work with, my design workflow is constantly moving and improving. During the past 3 years, I have been focused on designing user interfaces and experiences for Web3 product and services.</div>
+		<div class="c-80">I operate from Switzerland, but I work for businesses all around the world. I work hand to hand with engineers, designers and product owners to create the best possible experiences for the end user.</div>
+	</div>
+	
+	<div class="spacer-72"></div>
+	<img src="me.png" alt="">
+
+
+	
+	<article class="max-w-full prose dark:prose-invert">
+		{{ with .Title }}
+		<header>
+			<h1>{{ . | emojify }}</h1>
+			</header>
+			{{ end }}
+			<section>{{ .Content | emojify }}</section>
+			
+			<!-- <img src="moi.png" alt="" class="moi_img"> -->
+	</article>
+	
+	
+	<div class="space"></div>
+
+  <section>
+	<h3 class="grey_text mt-8 text-l no_margin_b">Recent projects I worked on</h3>
+	{{ partial "recent-articles.html" . }}
+</section>
+
+<style>
+
+.moi_img {
+	border-radius: 8px;
+	max-width: 250px; 
+}
+
+</style>
+  </html>
+
+  

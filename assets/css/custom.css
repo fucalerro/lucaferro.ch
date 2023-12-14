@@ -63,6 +63,7 @@ section > article {
 	padding: 8px !important;
 	border-radius: 12px !important;
 	cursor: pointer;
+	margin-top: 12px !important;
 }
 
 section > article:hover{
@@ -88,4 +89,186 @@ section > article a:hover {
 
 section > article div {
 	color: #686868 !important;
+}
+
+.icon_section {
+	display: flex;
+	flex-direction: column;
+	max-width: 50%;
+}
+
+.icon_block h3 {
+	margin: 0 0 12px 0;
+}
+
+.icon_block img {
+	margin: 0 12px 0 0;
+	padding: 0;
+}
+
+.icon_block {
+	margin: 0 0 32px 0;
+	line-height: 1.5em;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.wake_up {
+	margin: 48px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.wake_up div {
+	display: flex;
+	flex-direction: column;
+}
+
+.wake_up .catch {
+	margin: 20px 0;
+	font-size: 1.2em;
+	font-weight: 500;
+	color: #686868 !important;
+}
+
+.wake_up div div {
+	font-size: 1.6em;
+	color: #000000 !important;
+	padding: 12px 0;
+	border-bottom:#A4A4A4 solid 1px;
+}
+
+.grey_text {
+	color: #686868 !important;
+}
+
+.intro {
+	margin: 24px 0 0 0;
+	max-width: 50%;
+}
+
+.space {
+	height: 48px;
+}
+
+.no_margin_b {
+	margin-bottom: 0;
+}
+
+.padding_b-20 {
+	padding-bottom: 20px;
+}
+
+.padding_b-12 {
+	padding-bottom: 12px;
+}
+
+.margin_b-20 {
+	margin-bottom: 20px;
+}
+
+.margin_b-32 {
+	margin-bottom: 32px;
+}
+
+
+.border_b {
+	border-bottom: #A4A4A4 solid 1px;
+}
+
+
+.c-100 {
+	color: #000000 !important;
+}
+
+.c-80 {
+	color: #686868 !important;
+}
+
+.c-60 {
+	color: #A4A4A4 !important;
+}
+
+.c-40 {
+	color: #D1D1D1 !important;
+}
+
+.c-20 {
+	color: #F5F5F5 !important;
+}
+
+.c-0 {
+	color: #FFFFFF !important;
+}
+
+.text-64 {
+	font-size: 64px;
+	line-height: 1.1em;
+}
+
+.text-48 {
+	font-size: 48px;
+	line-height: 1.1em;
+}
+
+.text-32 {
+	font-size: 32px;
+	line-height: 1.1em;
+}
+
+.text-24 {
+	font-size: 24px;
+	line-height: 1.1em;
+}
+
+.text-20 {
+	font-size: 20px;
+	line-height: 1.1em;
+}
+
+.text-18 {
+	font-size: 18px;
+	line-height: 1.1em;
+}
+
+.text-16 {
+	font-size: 16px;
+	line-height: 1.1em;
+}
+
+.weight-500 {
+	font-weight: 500;
+}
+
+.weight-400 {
+	font-weight: 400;
+}
+
+.spacer-72 {
+	height: 72px;
+}
+
+.spacer-48 {
+	height: 48px;
+}
+
+.spacer-24 {
+	height: 24px;
+}
+
+.spacer-16 {
+	height: 16px;
+}
+
+.col-2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.col-2 > div {
+	width: 48%;
 }
