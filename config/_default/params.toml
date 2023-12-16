@@ -9,3 +9,4 @@ homepage.layout = "custom"
 homepage.showRecent = true
 header.logo = "logo.png"
 header.showTitle = false
+article.showTaxonomies = true

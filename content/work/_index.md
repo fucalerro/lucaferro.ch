@@ -1,1 +1,1 @@
-# I design product that scale
+# My work with the people and businesses I help

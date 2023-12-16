@@ -6,6 +6,8 @@ showReadingTime: false
 thumbnail: "thumbnail.svg"
 summary: "Bitcoin notes are a novel and secure way to hold Bitcoin. Why not make the experience even better by acquiring them in person?"
 coverCaption: "asdas"
+showDate: false
+
 ---
 
 # Swapbox GUI
